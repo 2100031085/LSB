@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2em;
+  font-size: 14px;
   color: rgb(34, 33, 33);
   position: relative; /* Ensure sections can contain absolutely positioned elements */
 }
@@ -45,7 +45,7 @@
 .white {
   background-color: white;
   color: black; /* Preserve black font color */
-  height: 110vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start; /* Align items at the top */
@@ -68,8 +68,75 @@
 }
 
 .bottom-section-item {
-  width: 30%; /* Adjust width of each item */
-  text-align: center;
+  text-align: center; /* Center align the content */
+  margin-bottom: 4px; /* Add margin between sections */
+
+}
+/* Font and styling for Contact Us heading */
+.bottom-section-item h2.underline-heading {
+  font-family: "Inknut Antiqua", serif; /* Apply Inknut Antiqua font */
+  font-size: 1.5em; /* Adjust font size as needed */
+  margin-bottom: 20px; /* Add margin below the heading */
+}
+
+/* Font and styling for Follow Us heading */
+.follow-heading {
+  font-family: "Jomhuria", sans-serif; /* Apply Jomhuria font */
+  font-size: 1.5em; /* Adjust font size as needed */
+  margin-bottom: 20px; /* Add margin below the heading */
+}
+.contact-info {
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 45px;
+}
+.small-icon {
+  width: 50px; /* Adjust width of the icon */
+  height: 50; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add spacing between icon and text */
+}
+
+.contact-info {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 29px; /* Add margin between contact info */
+}
+
+.bottom-section-item {
+  text-align: center; /* Center align the content */
+  margin-bottom: 60px; /* Add margin between sections */
+}
+
+
+.icon-container {
+  display: flex;
+  flex-direction: column; /* Arrange icons in a column */
+  align-items: center; /* Center icons horizontally */
+  margin-top: 2px; /* Adjust margin above icon container */
+}
+
+.icon-row {
+  display: flex; /* Use flexbox for icon rows */
+  justify-content: center; /* Center icons horizontally */
+  align-items: center; /* Center icons vertically */
+  margin-bottom: 0px; /* Adjust margin between icon rows */
+}
+
+.icon {
+  width: 40px; /* Adjust icon size */
+  height: 40px; /* Adjust icon size */
+  margin: 10px; /* Adjust spacing around icons */
+}
+
+/* Adjust font size for headings in the bottom gold section */
+.bottom-section-item h2 {
+  font-size: 2em; /* Decrease font size for headings */
+}
+
+/* Adjust icon sizes for better mobile view */
+.bottom-section-item .icon {
+  width: 50px; /* Decrease icon width */
+  height: 50px; /* Decrease icon height */
 }
 
 .underline-heading {
@@ -85,10 +152,6 @@
   margin-right: 5px; /* Add spacing between icon and text */
 }
 
-.qr-code {
-  width: 100px; /* Adjust width as needed */
-  height: auto; /* Maintain aspect ratio */
-}
 
 .icon-container {
   display: flex;
@@ -97,23 +160,18 @@
   gap: 10px; /* Adjust spacing between icons */
 }
 
-.icon {
-  width: 10px; /* Adjust the size of the icons */
-  height: 10px; /* Adjust the size of the icons */
-  vertical-align: middle; /* Align icon with text */
-}
 
 
 .black-box {
-  background-color: #1b1b1b;
+  background-color: #0a0a0a;
   color: #fff;
   font-family: "Inknut Antiqua", serif;
-  padding: 20px;
+  padding: 0px;
   border: 2px solid rgb(255, 219, 12); /* Add gold border */
   border-radius: 0; /* Remove border-radius for sharp edges */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
-  margin: 1px auto; /* Adjust margin for positioning */
-  max-width: 800px; /* Adjust maximum width as needed */
+  margin: 0px auto; /* Adjust margin for positioning */
+  max-width: 500px; /* Adjust maximum width as needed */
 }
 
 .black-box h2 {
@@ -123,7 +181,7 @@
 
 .black-box p {
   font-size: 13px;
-  line-height: 1.6;
+  line-height: 1;
 }
 
 
@@ -162,7 +220,7 @@
   font-family: "Inknut Antiqua", serif; /* Apply Inknut Antiqua font */
   color: #040404; /* Silver color */
   text-align: center;
-  margin: 60px 0;
+  margin: 10px 0;
   text-shadow: 2px 2px 4px #fb8383, 2px 2px 4px rgb(243, 232, 26); /* Darker and lighter drop shadow */
   animation: move3D 2s ease infinite; /* Apply 3D movement animation */
 }
@@ -196,13 +254,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 0px; /* Adjust top margin as needed */
+  margin-top: 40px; /* Adjust top margin as needed */
 }
 
 .link-item {
   width: 100%;
   max-width: 1000px; /* Adjust max-width as needed */
-  margin: 10px auto; /* Center and add vertical margin between each link item */
+  margin: 25px auto; /* Center and add vertical margin between each link item */
   padding: 5px;
   border-radius: 100px; /* Rounded corners */
   box-shadow: 0 0 10px rgba(238, 232, 232, 0.2); /* Soft shadow */
@@ -229,7 +287,7 @@
   padding: 1px;
   text-decoration: none;
   color: rgb(236, 229, 229);
-  font-size: 2.5em;
+  font-size: 2.1em;
   text-align: center;
   font-family: "Jomhuria", sans-serif; /* Apply Jomhuria font */
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Drop shadow effect */
@@ -242,12 +300,20 @@
 }
 
 /* Icon styling */
+.icon-container {
+  display: flex;
+  flex-direction: column; /* Stack icons vertically */
+  align-items: center; /* Center items horizontally */
+  margin-bottom: 10px; /* Adjust spacing between top and bottom icons */
+}
+
 .icon {
-  width: 80px; /* Adjust the size as needed */
-  height: 80px; /* Adjust the size as needed */
-  margin-right: 1px; /* Space between icon and text */
+  width: 50px; /* Adjust the size as needed */
+  height: 50px; /* Adjust the size as needed */
+  margin-bottom: 5px; /* Space between icons */
   vertical-align: middle; /* Align icon with text */
 }
+
 
 /* Styling for content in white section */
 .about-content {

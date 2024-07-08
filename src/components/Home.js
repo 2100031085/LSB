@@ -8,7 +8,6 @@ import whatsappIcon from '../images/whatsapp-icon.png';
 import logoImage from '../images/channel-logo.png'; // Import your logo image
 import emailIcon from '../images/email-icon.png';
 import phoneIcon from '../images/phone-icon.png'; 
-import qrCodeImage from '../images/qr-code.png'; // Import QR code image
 
 const Home = () => {
   return (
@@ -49,29 +48,34 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <section className="section gold bottom-gold-section">
-        <div className="bottom-section-content">
-          <div className="bottom-section-item">
-            <h2 className="underline-heading">Contact Us</h2>
-            <p><img src={emailIcon} alt="Email" className="small-icon" /> trioguru@gmail.com</p>
-            <p><img src={phoneIcon} alt="Phone" className="small-icon" /> +91 984XXXXX70</p>
-          </div>
-          <div className="bottom-section-item">
-            <h2 className="underline-heading">Follow Us</h2>
-            <div className="icon-container">
-              <img src={youtubeIcon} alt="Youtube" className="icon" />
-              <img src={instagramIcon} alt="Instagram" className="icon" />
-              <img src={telegramIcon} alt="Telegram" className="icon" />
-              <img src={whatsappIcon} alt="WhatsApp" className="icon" />
-            </div>
-          </div>
-          <div className="bottom-section-item">
-            <h2 className="underline-heading">Support Us</h2>
-            <p><img src={qrCodeImage} alt="QR Code" className="qr-code" /></p>
-          </div>
-        </div>
-      </section>
+  <div className="bottom-section-item">
+    <h2 className="underline-heading">Contact Us</h2>
+    <div className="contact-info">
+      <img src={emailIcon} alt="Email" className="small-icon" />
+      <p>trioguru@gmail.com</p>
+    </div>
+    <div className="contact-info">
+      <img src={phoneIcon} alt="Phone" className="small-icon" />
+      <p>+91 984XXXXX70</p>
+    </div>
+  </div>
+
+  <div className="bottom-section-item">
+    <h2 className="underline-heading">Follow Us</h2>
+    <div className="icon-container">
+      <div className="icon-row">
+        <img src={youtubeIcon} alt="Youtube" className="icon" />
+        <img src={instagramIcon} alt="Instagram" className="icon" />
+      </div>
+      <div className="icon-row">
+        <img src={telegramIcon} alt="Telegram" className="icon" />
+        <img src={whatsappIcon} alt="WhatsApp" className="icon" />
+      </div>
+    </div>
+  </div>
+</section>
+
     </div>
   );
 };
