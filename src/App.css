@@ -1,38 +1,273 @@
-.App {
+/* Styling for sections */
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+
+.section {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  color: rgb(34, 33, 33);
+  position: relative; /* Ensure sections can contain absolutely positioned elements */
+}
+
+.gold {
+  background-color: #e4c96f; /* Updated gold color */
+  height: 7vh; /* Adjust height for gold sections */
+  border: 5px solid #E0C365; /* Gold border around the section */
+}
+
+.black {
+  background-color: rgb(18, 17, 17);
+  position: relative; /* Ensure navigation buttons respect this section */
+  height: 30vh;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  overflow: hidden; /* Ensure no overflow for absolute positioning */
+  text-align: center; /* Center text content */
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.logo-image {
+  width: 150px; /* Adjust width of the logo image */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Adjust spacing as needed */
+}
+
+.white {
+  background-color: white;
+  color: black; /* Preserve black font color */
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items at the top */
+  align-items: center;
+}
+
+.bottom-gold-section {
+  background-color: #E0C365; /* Gold background color */
+  height: 28vh; /* Adjust this height as needed */
+  border: 29px solid #E0C365; /* Gold border around the section */
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: space-around; /* Space items evenly */
+  align-items: center; /* Center items vertically */
+}
+
+.bottom-section-content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%; /* Ensure full width */
+}
+
+.bottom-section-item {
+  width: 30%; /* Adjust width of each item */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.underline-heading {
+  border-bottom: 2px solid black; /* Add underline */
+  padding-bottom: 5px; /* Space between text and underline */
+  display: inline-block; /* Ensure underline doesn't span the entire width */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.small-icon {
+  width: 30px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  vertical-align: middle; /* Align icon with text */
+  margin-right: 5px; /* Add spacing between icon and text */
+}
+
+.qr-code {
+  width: 100px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center; /* Center icons horizontally */
+  align-items: center; /* Center icons vertically */
+  gap: 10px; /* Adjust spacing between icons */
+}
+
+.icon {
+  width: 10px; /* Adjust the size of the icons */
+  height: 10px; /* Adjust the size of the icons */
+  vertical-align: middle; /* Align icon with text */
+}
+
+
+.black-box {
+  background-color: #1b1b1b;
+  color: #fff;
+  font-family: "Inknut Antiqua", serif;
+  padding: 20px;
+  border: 2px solid rgb(255, 219, 12); /* Add gold border */
+  border-radius: 0; /* Remove border-radius for sharp edges */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+  margin: 1px auto; /* Adjust margin for positioning */
+  max-width: 800px; /* Adjust maximum width as needed */
+}
+
+.black-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.black-box p {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* Styling for navigation buttons */
+.navigation-buttons {
+  position: absolute;
+  top: 5px; /* Adjust top position as needed */
+  right: 5px; /* Align to the right corner */
+  display: flex;
+  gap: 20px; /* Space between buttons */
+}
+
+.nav-button {
+  font-size: 0.8em; /* Decrease font size */
+  border: 2px solid #E0C365; /* Gold border */
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #E0C365;
+  background-color: black;
+}
+
+.nav-button:hover {
+  background-color: #D9B452; /* Gold background on hover */
+  color: black; /* Black text on hover */
+}
+
+.gold-heading {
+  font-family: "Inknut Antiqua", serif; /* Apply Inknut Antiqua font */
+  font-size: 1em; /* Adjust font size as needed */
+  text-align: center;
+  margin-top: 20px;
+}
+
+.white-heading {
+  font-family: "Inknut Antiqua", serif; /* Apply Inknut Antiqua font */
+  color: #040404; /* Silver color */
+  text-align: center;
+  margin: 60px 0;
+  text-shadow: 2px 2px 4px #fb8383, 2px 2px 4px rgb(243, 232, 26); /* Darker and lighter drop shadow */
+  animation: move3D 2s ease infinite; /* Apply 3D movement animation */
+}
+
+@keyframes move3D {
+  0%, 100% {
+    transform: translateX(0) translateY(0) translateZ(0) rotateY(0);
+  }
+  25% {
+    transform: translateX(-10px) translateY(-10px) translateZ(20px) rotateY(45deg);
+  }
+  50% {
+    transform: translateX(10px) translateY(10px) translateZ(20px) rotateY(-45deg);
+  }
+  75% {
+    transform: translateX(-10px) translateY(-10px) translateZ(20px) rotateY(45deg);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@keyframes jumpShake {
+  0%, 50%, 100% {
+    transform: translateY(0);
+  }
+  25%, 75% {
+    transform: translateY(-10px); /* Adjust jump height */
+  }
+}
+
+/* Styling for links */
+.links-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 0px; /* Adjust top margin as needed */
 }
 
-.App-link {
-  color: #61dafb;
+.link-item {
+  width: 100%;
+  max-width: 1000px; /* Adjust max-width as needed */
+  margin: 10px auto; /* Center and add vertical margin between each link item */
+  padding: 5px;
+  border-radius: 100px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(238, 232, 232, 0.2); /* Soft shadow */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link-item:nth-child(1) {
+  background-color: #FE0002; /* Light pink */
+}
+
+.link-item:nth-child(2) {
+  background-color: #C939A7; /* Light blue */
+}
+
+.link-item:nth-child(3) {
+  background-color: #20A0E1 /* Gold */
+}
+
+.link-item:nth-child(4) {
+  background-color: #0BB718; /* Light green */
+}
+
+.link-item a {
+  display: block;
+  padding: 1px;
+  text-decoration: none;
+  color: rgb(236, 229, 229);
+  font-size: 2.5em;
+  text-align: center;
+  font-family: "Jomhuria", sans-serif; /* Apply Jomhuria font */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Drop shadow effect */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.link-item a:hover {
+  opacity: 0.8;
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Icon styling */
+.icon {
+  width: 80px; /* Adjust the size as needed */
+  height: 80px; /* Adjust the size as needed */
+  margin-right: 1px; /* Space between icon and text */
+  vertical-align: middle; /* Align icon with text */
+}
+
+/* Styling for content in white section */
+.about-content {
+  font-family: "Jomhuria", sans-serif; /* Apply Jomhuria font */
+  color: #333;
+  text-align: center;
+  margin: 20px;
+}
+
+/* New styling for bottom gold section */
+.bottom-section-content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.bottom-section-content div {
+  font-family: "Barlow", serif; /* Apply Inknut Antiqua font */
+  font-size: 0.8em; /* Adjust font size */
+  color: black; /* Text color */
+  margin: 0 20px; /* Horizontal margin between sections */
+  text-align: center; /* Center text content */
 }
