@@ -166,6 +166,7 @@
   background-color: #0a0a0a;
   color: #fff;
   padding: 0px;
+  border: 2px solid rgb(255, 219, 12); /* Add gold border */
   border-radius: 0; /* Remove border-radius for sharp edges */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
   margin: 0px auto; /* Adjust margin for positioning */
