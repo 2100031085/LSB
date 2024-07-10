@@ -181,13 +181,13 @@
 
 .black-box p {
   font-size: 15px;
-  line-height: 1.7;
+  line-height: 2;
   margin-left: 10px; /* Additional margin for more control */
   margin-right: 10px; /* Additional margin for more control */
 }
 
 .black-box h4 {
-  text-align: center; /* Center the heading */
+  text-align: left; /* Center the heading */
   margin-left: 10px; /* Additional margin for more control */
   margin-right: 10px; /* Additional margin for more control */
 }
