@@ -175,7 +175,7 @@
 
 .black-box {
   text-align: justify; /* Justify text to align both left and right edges */
-  max-width: 350px; /* Adjust the max-width as needed */
+  max-width: 380px; /* Adjust the max-width as needed */
   margin: 0 auto; /* Center the black-box within its parent */
   padding: 0 20px; /* Add padding to the left and right */
 }
