@@ -169,14 +169,14 @@
   border-radius: 0; /* Remove border-radius for sharp edges */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
   margin: 0px auto; /* Adjust margin for positioning */
-  max-width: 420px; /* Adjust maximum width as needed */
+  max-width: 430px; /* Adjust maximum width as needed */
 }
 
 
 
 .black-box p {
   font-size: 16px;
-  line-height: 1.55;
+  line-height: 1.59;
 }
 .black-box {
   text-align: justify;
