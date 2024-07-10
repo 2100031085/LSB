@@ -174,16 +174,16 @@
 }
 
 .black-box {
+  text-align: justify; /* Justify text to align both left and right edges */
   max-width: 800px; /* Adjust the max-width as needed */
   margin: 0 auto; /* Center the black-box within its parent */
   padding: 0 20px; /* Add padding to the left and right */
 }
-
 .black-box p {
   font-size: 15px;
   line-height: 1;
-  margin-left: 10px; /* Additional margin for more control */
-  margin-right: 10px; /* Additional margin for more control */
+  margin: 0; /* Ensure no extra margins are added */
+  text-align-last: left; /* Align the last line to the left */
 }
 
 .black-box h4 {
@@ -263,7 +263,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px; /* Adjust top margin as needed */
+  margin-top: 50px; /* Adjust top margin as needed */
 }
 
 .link-item {
