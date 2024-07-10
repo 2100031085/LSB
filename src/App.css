@@ -173,19 +173,22 @@
   max-width: 450px; /* Adjust maximum width as needed */
 }
 
-
+.black-box {
+  text-align: left; /* Align text to the left */
+  max-width: 800px; /* Adjust the max-width as needed */
+  margin: 0 auto; /* Center the black-box within its parent */
+  padding: 0 20px; /* Add padding to the left and right */
+}
 
 .black-box p {
   font-size: 15px;
   line-height: 1.7;
 }
-.black-box {
-text-align: center; 
-}
 
 .black-box h4 {
   text-align: center; /* Center the heading */
 }
+
 
 
 /* Styling for navigation buttons */
