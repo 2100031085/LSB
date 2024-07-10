@@ -229,7 +229,7 @@
   font-family: "Inknut Antiqua", serif; /* Apply Inknut Antiqua font */
   color: #040404; /* Silver color */
   text-align: center;
-  margin: 10px 0;
+  margin: 25px 0;
   text-shadow: 2px 2px 4px #fb8383, 2px 2px 4px rgb(243, 232, 26); /* Darker and lighter drop shadow */
   animation: move3D 2s ease infinite; /* Apply 3D movement animation */
 }
