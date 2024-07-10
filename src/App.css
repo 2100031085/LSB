@@ -181,7 +181,7 @@
 }
 .black-box p {
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 0; /* Ensure no extra margins are added */
   text-align-last: left; /* Align the last line to the left */
 }
