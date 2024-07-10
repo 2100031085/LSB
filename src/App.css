@@ -174,14 +174,10 @@
   max-width: 500px; /* Adjust maximum width as needed */
 }
 
-.black-box h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
 
 .black-box p {
   font-size: 13px;
-  line-height: 1;
+  line-height: 1.45;
 }
 
 
