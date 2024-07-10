@@ -170,7 +170,7 @@
   border-radius: 0; /* Remove border-radius for sharp edges */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
   margin: 0px auto; /* Adjust margin for positioning */
-  max-width: 450px; /* Adjust maximum width as needed */
+  max-width: 410px; /* Adjust maximum width as needed */
 }
 
 
