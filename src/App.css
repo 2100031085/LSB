@@ -170,7 +170,7 @@
   border-radius: 0; /* Remove border-radius for sharp edges */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
   margin: 0px auto; /* Adjust margin for positioning */
-  max-width: 410px; /* Adjust maximum width as needed */
+  max-width: 420px; /* Adjust maximum width as needed */
 }
 
 
@@ -180,7 +180,7 @@
   line-height: 1.7;
 }
 .black-box {
-  text-align: justify;
+text-align: center; 
 }
 
 .black-box h4 {
@@ -290,7 +290,7 @@
   padding: 1px;
   text-decoration: none;
   color: rgb(236, 229, 229);
-  font-size: 2.1em;
+  font-size: 2.5em;
   text-align: center;
   font-family: "Jomhuria", sans-serif; /* Apply Jomhuria font */
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Drop shadow effect */
